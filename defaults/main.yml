@@ -1,3 +1,16 @@
 ---
 debug: false
-state: present # possible values defined in meta/argument_specs.yml
+ubuntu_pro_state: present # possible values defined in meta/argument_specs.yml
+
+# To enable certain pro services define the values in this list
+ubuntu_pro_enabled_services:
+  - 'cc-eal'       # Common Criteria EAL2
+  - 'esm-infra'    # Expanded Security Maintenance for Infrastructure
+  - 'fips'
+  - 'fips-updates'
+  - 'livepatch'    # Canonical Kernel Livepatch
+  - 'usg'
+
+# To disable a pro service, remote it from ubuntu_pro_enabled_services and add
+# it to ubuntu_pro_disabled_services
+ubuntu_pro_disabled_services: []
