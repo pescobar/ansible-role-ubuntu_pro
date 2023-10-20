@@ -14,3 +14,5 @@ ubuntu_pro_enabled_services:
 # To disable a pro service, remote it from ubuntu_pro_enabled_services and add
 # it to ubuntu_pro_disabled_services
 ubuntu_pro_disabled_services: []
+
+ubuntu_pro_pkgs_state: present

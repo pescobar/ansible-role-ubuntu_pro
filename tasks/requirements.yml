@@ -12,5 +12,5 @@
 - name: Install 'ubuntu-advantage-tools' package
   ansible.builtin.apt:
     name: ubuntu-advantage-tools
-    state: "{{ netplan_pkgs_pkgs_state | default('present') }}"
+    state: "{{ ubuntu_pro_pkgs_state | default('present') }}"
   become: yes
