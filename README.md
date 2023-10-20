@@ -31,6 +31,7 @@ The only mandatory variable is `ubuntu_pro_token`.
 | `ubuntu_pro_enabled_services`              | List of pro services to enable   | List   | NO        | in defaults.yml|
 | `ubuntu_pro_disabled_services`             | List of pro services to disable   | List   | NO        | in defaults.yml|
 | `ubuntu_pro_pkgs_state`                    | State of required packages       | String | NO        | present |
+| `ubuntu_pro_debug`                         | Set debug on to print output       | Bool | NO        | false |
 
 
 You can find more information about `ubuntu_pro_config.*` variables on [Ubuntu Pro Client README](https://github.com/canonical/ubuntu-advantage-client#readme).

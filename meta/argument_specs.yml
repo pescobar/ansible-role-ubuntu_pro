@@ -6,7 +6,7 @@ argument_specs:
       - The main entry point just combines the repositories and packages
              entry points.
     options:
-      debug:
+      ubuntu_pro_debug:
         description: Use debug module to display 'pro' command stdout/stderr
         type: bool
         default: false

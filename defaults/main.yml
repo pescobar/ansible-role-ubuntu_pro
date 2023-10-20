@@ -1,5 +1,5 @@
 ---
-debug: false
+ubuntu_pro_debug: false
 ubuntu_pro_state: present # possible values defined in meta/argument_specs.yml
 
 # To enable certain pro services define the values in this list

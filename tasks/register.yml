@@ -9,4 +9,4 @@
 - name: Print 'pro attach' command output
   ansible.builtin.debug:
     var: reg_pro_attach
-  when: debug
+  when: ubuntu_pro_debug

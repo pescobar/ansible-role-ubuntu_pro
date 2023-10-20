@@ -19,4 +19,4 @@
 - name: Print 'pro detach' command output
   ansible.builtin.debug:
     var: reg_pro_detach
-  when: (debug and pro_command_exists)
+  when: (ubuntu_pro_debug and pro_command_exists)
