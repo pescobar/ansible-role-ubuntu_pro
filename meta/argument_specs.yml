@@ -6,11 +6,11 @@ argument_specs:
       - The main entry point just combines the repositories and packages
              entry points.
     options:
-      debug:
+      ubuntu_pro_debug:
         description: Use debug module to display 'pro' command stdout/stderr
         type: bool
         default: false
-      disabled_services:
+      ubuntu_pro_disabled_services:
         description: List of services to disable
         type: list
         elements: str
@@ -21,7 +21,7 @@ argument_specs:
           - 'fips-updates'
           - 'livepatch'    # Canonical Kernel Livepatch
           - 'usg'
-      enabled_services:
+      ubuntu_pro_enabled_services:
         description: List of services to enable
         type: list
         elements: str
@@ -32,7 +32,7 @@ argument_specs:
           - 'fips-updates'
           - 'livepatch'    # Canonical Kernel Livepatch
           - 'usg'
-      state:
+      ubuntu_pro_state:
         description: State of Ubuntu Pro installation
         type: str
         choices:

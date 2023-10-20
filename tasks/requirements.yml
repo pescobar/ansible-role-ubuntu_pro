@@ -12,5 +12,5 @@
 - name: Install 'ubuntu-advantage-tools' package
   ansible.builtin.apt:
     name: ubuntu-advantage-tools
-    state: latest
+    state: "{{ ubuntu_pro_pkgs_state | default('present') }}"
   become: yes

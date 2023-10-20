@@ -4,7 +4,7 @@
   become: yes
   register: reg_pro_disable
   when: item in ubuntu_pro_services
-  loop: "{{ disabled_services }}"
+  loop: "{{ ubuntu_pro_disabled_services }}"
   changed_when: reg_pro_disable.rc == 0
   failed_when:
     - reg_pro_disable.rc != 0
